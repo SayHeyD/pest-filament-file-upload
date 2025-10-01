@@ -24,6 +24,7 @@ test('can edit profile', function () {
 });
 
 test('can upload file', function () {
+    // This fails
     Storage::fake('local');
     $user = User::factory()->create();
     $this->actingAs($user);
