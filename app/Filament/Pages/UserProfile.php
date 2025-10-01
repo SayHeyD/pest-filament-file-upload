@@ -25,8 +25,8 @@ class UserProfile extends EditProfile
     protected function getAvatarFormComponent(): Component
     {
         return FileUpload::make('avatar_url')
-                ->visibility('private')
-                ->label('Avatar')
-                ->avatar();
+            ->visibility('private')
+            ->label('Avatar')
+            ->avatar();
     }
 }

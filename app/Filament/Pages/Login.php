@@ -2,8 +2,6 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Pages\Page;
-
 class Login extends \Filament\Auth\Pages\Login
 {
     public function mount(): void
@@ -12,7 +10,7 @@ class Login extends \Filament\Auth\Pages\Login
 
         $this->form->fill([
             'email' => 'test@example.com',
-            'password' => 'password'
+            'password' => 'password',
         ]);
     }
 }
