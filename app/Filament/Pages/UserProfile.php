@@ -11,8 +11,6 @@ class UserProfile extends EditProfile
 {
     public function form(Schema $schema): Schema
     {
-
-
         return $schema
             ->components([
                 $this->getAvatarFormComponent(),
